@@ -199,7 +199,8 @@ def test_pip_packages(
         # (/etc/yum.repos.d/ubi.repo) and extracted to a local directory.
         pytest.param(
             utils.TestParameters(
-                branch="pip/e2e_rust_extensions",
+                repo_url="https://github.com/Harsh-2005d/integration-tests.git",
+                branch="pip/e2e_hello_extension",
                 packages=(({"type": "pip"}, {"type": "rpm"})),
                 flags=[],
                 check_output=True,
